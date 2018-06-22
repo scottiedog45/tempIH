@@ -11,11 +11,42 @@
   margin-top: 75px;
 }
 
+.login-page-signUp-button {
+	width: 90vw;
+    margin: auto;
+    height: 8vh;
+}
+
+.login-page-forgotPasswordLink {
+			margin-bottom: 5vh;
+    text-decoration: underline;
+    color: black !important;
+    display: inline-block;
+    width: 100%;
+    min-width: 50%;
+    text-align: center;
+}
+
+.login-page-iconStack {
+	display: flex;
+	margin: auto 5%;
+}
+
+.login-page-iconStack li {
+	margin: 1%;
+}
+
+.login-page-iconStack li img {
+	width: 20vw;
+	
+}
+
+
+
 .landing-page-logo-container {
   text-align: center;
   margin-top: 175px;
   margin-bottom: 75px;
-
 }
 
 .landing-page-create-button {
