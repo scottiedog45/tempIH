@@ -159,8 +159,8 @@ var routes = [
     componentUrl: './pages/login-screen.html',
   },
   {
-    path: '/login-screen-page/',
-    componentUrl: './pages/login-screen-page.html',
+    path: '/login/',
+    componentUrl: './pages/login.html',
   },
   {
     path: '/messages/',
