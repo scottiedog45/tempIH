@@ -1,6 +1,17 @@
 <template>
 <div class='page'>
-	<div id='app'>
+		<div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+          </a>
+        </div>
+        <div class="title">Login Screen</div>
+      </div>
+    </div>
+		
 <div class="page no-toolbar no-navbar no-swipeback">
     <div class="page-content login-screen-content">
       <div class="login-screen-title"><img src='../www/assets/transparentLogo.png'></div>
@@ -49,7 +60,7 @@
       </form>
     </div>
   </div>
-	</div>
+	
 	</template>
 	<script>
   return {
@@ -57,12 +68,10 @@
       signIn: function () {
         var $ = this.$;
         var app = this.$app;
-        var router = this.$router;
-        var username = $('input#demo-username-2').val();
-        var password = $('input#demo-password-2').val();
+        var username = $('input#demo-username-1').val();
+        var password = $('input#demo-password-1').val();
         app.dialog.alert('Username: ' + username + '<br>Password: ' + password, function () {
           app.loginScreen.close();
-          router.back();
         })
       }
     }
