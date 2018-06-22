@@ -1,4 +1,18 @@
 .signup-login-container {
   display: flex;
   justify-content: space-around;
+  margin-top: 75px;
+}
+
+.landing-page-logo-container {
+  text-align: center;
+  margin-top: 175px;
+  margin-bottom: 75px;
+
+}
+
+.landing-page-create-button {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
