@@ -12,7 +12,7 @@
       <div class="title">New Invoice</div>
     </div>
   </div>
-  <div class="page-content">
+  <div class="newInvoice-page-content page-content">
     <div class="newInvoice-block  block">
       <p class='newInvoice-page-type-select-text'>select invoice template</p>
 					
@@ -157,8 +157,7 @@
           </div>
         </li>
 								<div class='row'>
-									<div class='col'>
-										<li class="item-content item-input">
+										<li class=" col item-content item-input">
 												<div class="item-inner">
 														<div class="item-title item-label">Invoice #</div>
 														<div class="item-input-wrap">
@@ -167,11 +166,11 @@
 														</div>
 												</div>
 										</li>
-										</div>
+										
 									
 									
-									<div class='col'>
-										<li class="item-content item-input">
+									
+										<li class="col item-content item-input">
 												<div class="item-inner">
 														<div class="item-title item-label">Invoice Date</div>
 														<div class="item-input-wrap">
@@ -179,43 +178,59 @@
 														</div>
 												</div>
 										</li>
-							</div>
+							
 							</div>
 							<!--Here I will put a h1 or p or something that says "Items", not part of the ul/li flow...but we'll see how it goes-->
 								<p class='newInvoice-page-items-pTag'>Items</p>
-								
-								<li class="item-content item-input">
-          <div class="item-inner">
-            <div class="item-title item-label">Description</div>
-            <div class="item-input-wrap">
-              <input name="description" type="text" placeholder="">
-              <span class="input-clear-button"></span>
-            </div>
-          </div>
-        </li>					
+								<div class='row'>
+										<li class="col item-content item-input">
+												<div class="item-inner">
+														<div class="item-title item-label">Description</div>
+														<div class="item-input-wrap">
+																<input name="description" type="text" placeholder="">
+																<span class="input-clear-button"></span>
+														</div>
+												</div>
+										</li>					
+							
+							
+										<li class="col item-content item-input">
+												<div class="item-inner">
+														<div class="item-title item-label">Amount</div>
+														<div class="item-input-wrap">
+																<input name="amount" type="text" placeholder="">
+																<span class="input-clear-button"></span>
+														</div>
+												</div>
+										</li>
+									
+										<li class='col'>
+										<a class='newInvoice-addLogo-link link' href='/addTax/'>Add Tax</a>
+									</li>
+							</div>
 							
 							
         <li class="item-content item-input">
           <div class="item-inner">
-            <div class="item-title item-label">Amount</div>
+            <div class="item-title item-label">Terms and Conditions</div>
             <div class="item-input-wrap">
-              <input name="amount" type="text" placeholder="">
-              <span class="input-clear-button"></span>
-            </div>
-          </div>
-        </li>
-							
-							
-        <li class="item-content item-input">
-          <div class="item-inner">
-            <div class="item-title item-label">About you</div>
-            <div class="item-input-wrap">
-              <textarea name="bio" class="resizable" placeholder="Bio"></textarea>
+              <textarea name="termsAndConditions" class="resizable" placeholder=""></textarea>
             </div>
           </div>
         </li>
       </ul>
+								
+					</div>
+					<section class='newInvoice-totalBox'>
+						<p>Subtotal: 0.00</p>
+						<p>TOTAL: 0.00</p>
+						<div class='newInvoice-currencyBox'><sup class='newInvoice-currencyBox-sup'><a href='/editCurrency/'>edit</a></sup><h2 class='newInvoice-currencyBox-h2'>USD</h2></div>
+				</section>
+					<!--button goes here-->
+					<div class='row'>
+						<button class='newInvoice-saveSendInvoiceButton  col button button-fill'>Save or Send Invoice</button>
 					</div>
     </form>
+				
   </div>
 </div>

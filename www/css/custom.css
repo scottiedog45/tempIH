@@ -141,10 +141,40 @@ text-decoration: underline;
 	font-size: .9rem !important;
 }
 
+.newInvoice-page-content {
+	background: #fff !important;
+}
+
+.newInvoice-totalBox {
+	text-align:right;
+	margin-right:8vw;
+	
+}
+
+.newInvoice-totalBox p {
+	margin:0;
+}
+
+.newInvoice-saveSendInvoiceButton{
+	margin-top:2vh !important;
+	width: 90vw !important;
+    margin: auto;
+    height: 6vh !important;
+    box-shadow: 0.3vw 0.3vw rgba(0,0,0,0.3);
+}
 
 
 .newInvoice-block {
 	padding: unset !important;
+}
+
+.newInvoice-currencyBox-h2 {
+	margin: 0;
+	position: relative;
+}
+
+.newInvoice-currencyBox-sup {
+	position: absolute;
 }
 /*End of New Invoice Page Styles*/
 
