@@ -86,3 +86,17 @@ text-decoration: underline;
 .landing-page-footer-unsortedList:after {
 	background-color: unset !important;
 }
+
+/*Template Page Styles*/
+.template-page-body {
+	background: #fff;
+}
+
+.template-page-h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+/*End of Template Page Styles*/

@@ -152,7 +152,7 @@ var routes = [
   },
   {
     path: '/list/',
-    url: './pages/list.html',
+    url: './pages/IHTemplateList.html',
   },
   {
     path: '/login-screen/',
