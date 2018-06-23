@@ -1,3 +1,20 @@
+/*NavBar Styles Start */
+.navBar-invoiceHome-logo{
+	width: 90%;
+    margin: auto 5%;
+}
+
+.navBar-logoCradle {
+	    /* width: 110%; */
+    padding: auto 18%;
+    box-shadow: 0.3vw 0.3vw rgba(0,0,0,0.3);
+    background: white;
+	border-radius: 1rem;
+}
+/*NavBar Styles End */
+
+/*Signup Page Styles Start*/
+
 .signup-login-container {
 	margin-top: 3vh;
   display: flex;
@@ -9,6 +26,9 @@ text-decoration: underline;
     color: black;
 }
 
+/*Signup Page Styles End*/
+
+/*Login Page Styles Begin*/
 .login-page-signIn-button {
 	    width: 25%;
     margin: auto;
@@ -46,7 +66,9 @@ text-decoration: underline;
 	width: 20vw;
 	
 }
+/*Login Page Styles End*/
 
+/*Landing Page Styles Start*/
 .landing-page-body {
 	background: #fff;
 }
@@ -92,7 +114,93 @@ text-decoration: underline;
 	background-color: unset !important;
 }
 
+<<<<<<< HEAD
 .signup-page-signup-button {
   width: 80%;
   margin: auto;
 }
+=======
+/*Landing Page Styles End*/
+
+/*Template Page Styles*/
+.template-page-body {
+	background: #fff;
+}
+
+.template-page-h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+/*End of Template Page Styles*/
+
+/*Start of New Invoice Page Styles*/
+.newInvoice-page-type-select-text {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: bold;
+	text-align:center;
+}
+
+.newInvoice-page-type-select-grid {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+	grid-gap: 5vw !important;	
+}
+
+.newInvoice-addLogo-link {
+	text-decoration: underline;
+	width: 100%;
+		padding: .5rem;
+}
+
+.newInvoice-page-items-pTag {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.newInvoice-item-title {
+	margin: auto !important;
+	font-size: .9rem !important;
+}
+
+.newInvoice-page-content {
+	background: #fff !important;
+}
+
+.newInvoice-totalBox {
+	text-align:right;
+	margin-right:8vw;
+	
+}
+
+.newInvoice-totalBox p {
+	margin:0;
+}
+
+.newInvoice-saveSendInvoiceButton{
+	margin-top:2vh !important;
+	width: 90vw !important;
+    margin: auto;
+    height: 6vh !important;
+    box-shadow: 0.3vw 0.3vw rgba(0,0,0,0.3);
+}
+
+
+.newInvoice-block {
+	padding: unset !important;
+}
+
+.newInvoice-currencyBox-h2 {
+	margin: 0;
+	position: relative;
+}
+
+.newInvoice-currencyBox-sup {
+	position: absolute;
+}
+/*End of New Invoice Page Styles*/
+
+>>>>>>> 7f85e08f9a38c66fbb3ce86114274157810b8043
