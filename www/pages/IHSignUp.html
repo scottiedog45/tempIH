@@ -1,0 +1,78 @@
+<template>
+<div class='page'>
+		<div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+          </a>
+        </div>
+        <div class="title">Sign Up</div>
+      </div>
+    </div>
+		
+<div class="page no-toolbar no-navbar no-swipeback">
+    <div class="page-content login-screen-content">
+      <div class="login-screen-title signup-screen-title"><img src='../www/assets/transparentLogo.png'>
+						</div>
+						<div class='signup-screen-sales-pitch'>
+							<img class='signup-screen-gift-picture'
+												src='../www/assets/invoiceHomeGift.png'>
+							<h2>Free Plan</h2>
+							<h3>Sign up for free and create beautiful PDF invoices in minutes</h3>
+							<p>Invoice up to $1,000 for 30 days</p>
+							<p class='signup-screen-sales-pitch-bold-p'>Please enter your email address below.</p>
+						</div>
+					
+					
+      <form>
+        <div class="list">
+          <ul>
+            <li class="item-content item-input item-input-with-value">
+              <div class="item-inner">
+                <div class="item-title item-label">Email</div>
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="Your email address" id="demo-username-2" class="input-with-value">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="list">
+          
+										<button class='login-page-signUp-button col button button-big button-fill'>
+											Sign up
+										</button>
+          <div class="block-footer">...or sign in with services you already have
+											<br>
+											<ul class='login-page-iconStack'>
+												<li><img src="../www/assets/google-plus.svg"></li>
+												<li><img src="../www/assets/facebook.svg"></li>
+												<li><img src='../www/assets/Microsoft-Windows-7-Logo-1.png'></li>
+												<li><img src="../www/assets/yahoo-svgrepo-com.svg"></li>
+											</ul>
+									</div>
+        </div>
+      </form>
+    </div>
+  </div>
+	
+	</template>
+	<script>
+  return {
+    methods: {
+      signIn: function () {
+        var $ = this.$;
+        var app = this.$app;
+        var username = $('input#demo-username-1').val();
+        var password = $('input#demo-password-1').val();
+        app.dialog.alert('Username: ' + username + '<br>Password: ' + password, function () {
+          app.loginScreen.close();
+        })
+      }
+    }
+  }
+</script>

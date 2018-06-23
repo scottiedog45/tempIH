@@ -234,6 +234,10 @@ var routes = [
     path: '/sheet-modal/',
     componentUrl: './pages/sheet-modal.html',
   },
+	{
+    path: '/signup/',
+    componentUrl: './pages/IHSignUp.html',
+  },
   {
     path: '/smart-select/',
     url: './pages/smart-select.html',
