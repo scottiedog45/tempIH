@@ -1,3 +1,5 @@
+<!--I set the route for adding a logo of the customer's own choosing ot be [ /addOwnLogo/ ] -->
+
 <div class="page">
   <div class="navbar">
     <div class="navbar-inner sliding">
@@ -7,41 +9,197 @@
           <span class="ios-only">Back</span>
         </a>
       </div>
-      <div class="title">About Framework7</div>
+      <div class="title">New Invoice</div>
     </div>
   </div>
   <div class="page-content">
-    <div class="block">
-      <p>New Invoice</p>
-    </div>
+    <div class="newInvoice-block  block">
+      <p class='newInvoice-page-type-select-text'>select invoice template</p>
+					
+						<div class='list'>
+						<ul class='newInvoice-page-type-select-grid'>
+							<!--Here, we need to link to some route that will dynamically render
+								the needed form types for each of the types of invoices our service offers UPON THE PRESSING OF THESE RADIO BUTTONS...do we simply add more inputs and then spit out the pdf/image later?-->
+							<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='invoice'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>INVOICE</div>
+									</div>
+									</label>
+							</li>
+							
+							<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='proforma'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>PROFORMA</div>
+									</div>
+									</label>
+							</li>
+							
+								<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='receipt'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>RECEIPT</div>
+									</div>
+									</label>
+							</li>
+							
+							<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='salesReceipt'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>SALES RECEIPT</div>
+									</div>
+									</label>
+							</li>
+							
+								<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='quote'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>QUOTE</div>
+									</div>
+									</label>
+							</li>
+							
+							<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='estimate'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>ESTIMATE</div>
+									</div>
+									</label>
+							</li>
+							
+							<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='creditMemo'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>CREDIT MEMO</div>
+									</div>
+									</label>
+							</li>
+							
+							<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='creditNote'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>CREDIT NOTE</div>
+									</div>
+									</label>
+							</li>
+							
+								<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='taxInvoice'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title item-title'>TAX INVOICE</div>
+									</div>
+									</label>
+							</li>
+							
+							<li class='newInvoice-ptsg-1'>
+								<label class='item-radio item-content'>
+								<input type='radio' name='my-radio' value='purchaseOrder'/>
+									<i class='icon icon-radio'></i>
+									<div class='item-inner'>
+										<div class='newInvoice-item-title  item-title'>PURCHASE ORDER</div>
+									</div>
+									</label>
+							</li>
+							
+						
+							
+							
+							
+							
+							
+							
+						</ul>
+				</div>
+   </div>
     <form class="list form-store-data" id="new-invoice-form">
       <ul>
         <li class="item-content item-input">
           <div class="item-inner">
-            <div class="item-title item-label">Name</div>
+            <div class="item-title item-label">From</div>
             <div class="item-input-wrap">
-              <input name="name" type="text" placeholder="Your name">
+              <input name="vendorName/Business" type="text" placeholder="Your Name/Business">
               <span class="input-clear-button"></span>
             </div>
           </div>
         </li>
-        <li class="item-content item-input">
+							<!--Here I am going to add the link for having the 
+							customer input their own logo or image, we will need a route that directs the user to some kind F7 component that allows for communicating with the DB in a way that facilitates the sharing of image-->
+							
+							<a class='newInvoice-addLogo-link link' href='/addOwnLogo/'>Add Logo (optional)</a>
+							
+								<li class="item-content item-input">
           <div class="item-inner">
-            <div class="item-title item-label">Due Date</div>
+            <div class="item-title item-label">To</div>
             <div class="item-input-wrap">
-              <input name="due-date" type="date" value="2014-04-30" placeholder="Please choose...">
+              <input name="customer/recipientAddress" type="text" placeholder="Customer/Recipient Address">
+              <span class="input-clear-button"></span>
             </div>
           </div>
         </li>
+							
+								<li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Invoice #</div>
+            <div class="item-input-wrap">
+              <input name="invoice#" type="text" placeholder="">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+							
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Invoice Date</div>
+            <div class="item-input-wrap">
+              <input name="invoiceDate" type="date" value="2014-04-30" placeholder="Please choose...">
+            </div>
+          </div>
+        </li>
+							
+							<!--Here I will put a h1 or p or something that says "Items", not part of the ul/li flow...but we'll see how it goes-->
+								<p class='newInvoice-page-items-pTag'>Items</p>
+								
+								<li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-title item-label">Description</div>
+            <div class="item-input-wrap">
+              <input name="description" type="text" placeholder="">
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>					
+							
+							
         <li class="item-content item-input">
           <div class="item-inner">
             <div class="item-title item-label">Amount</div>
             <div class="item-input-wrap">
-              <input name="name" type="text" placeholder="Your name">
+              <input name="amount" type="text" placeholder="">
               <span class="input-clear-button"></span>
             </div>
           </div>
         </li>
+							
+							
         <li class="item-content item-input">
           <div class="item-inner">
             <div class="item-title item-label">About you</div>

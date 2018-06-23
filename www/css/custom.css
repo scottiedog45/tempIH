@@ -1,3 +1,5 @@
+/*Signup Page Styles Start*/
+
 .signup-login-container {
 	margin-top: 3vh;
   display: flex;
@@ -6,8 +8,12 @@
 
 .signup-login-container a {
 text-decoration: underline;
-    color: black;}
+    color: black;
+}
 
+/*Signup Page Styles End*/
+
+/*Login Page Styles Begin*/
 .login-page-signIn-button {
 	    width: 25%;
     margin: auto;
@@ -45,7 +51,9 @@ text-decoration: underline;
 	width: 20vw;
 	
 }
+/*Login Page Styles End*/
 
+/*Landing Page Styles Start*/
 .landing-page-body {
 	background: #fff;
 }
@@ -87,6 +95,8 @@ text-decoration: underline;
 	background-color: unset !important;
 }
 
+/*Landing Page Styles End*/
+
 /*Template Page Styles*/
 .template-page-body {
 	background: #fff;
@@ -100,3 +110,41 @@ text-decoration: underline;
 }
 
 /*End of Template Page Styles*/
+
+/*Start of New Invoice Page Styles*/
+.newInvoice-page-type-select-text {
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: bold;
+	text-align:center;
+}
+
+.newInvoice-page-type-select-grid {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+	grid-gap: 5vw !important;	
+}
+
+.newInvoice-addLogo-link {
+	text-decoration: underline;
+	width: 100%;
+		padding: .5rem;
+}
+
+.newInvoice-page-items-pTag {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.newInvoice-item-title {
+	margin: auto !important;
+	font-size: .9rem !important;
+}
+
+
+
+.newInvoice-block {
+	padding: unset !important;
+}
+/*End of New Invoice Page Styles*/
+
