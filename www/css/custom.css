@@ -1,7 +1,12 @@
 .signup-login-container {
+	margin-top: 3vh;
   display: flex;
   justify-content: space-around;
 }
+
+.signup-login-container a {
+text-decoration: underline;
+    color: black;}
 
 .login-page-signIn-button {
 	    width: 25%;
@@ -41,17 +46,41 @@
 	
 }
 
-
+.landing-page-body {
+	background: #fff;
+}
 
 .landing-page-logo-container {
   text-align: center;
   margin-top: 175px;
-  margin-bottom: 75px;
+/*  margin-bottom: 75px;*/
+	margin-bottom: 3vh;
 }
 
 .landing-page-create-button {
-  width: 75%;
+/*  width: 75%;*/
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
+/*  height: 60px;*/
+	border-radius: .3rem !important;
+	    width: 90%;
+    height: 10vh !important;
+    box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
+}
+
+.landing-page-footer-unsortedList {
+	    text-align: center;
+    line-height: 4vh;
+    /* position: fixed; */
+    /* bottom: 10%; */
+    /* margin: 5%; */
+    margin-top: 50% !important;
+}
+
+.landing-page-footer-unsortedList:before {
+	background-color: unset !important;
+}
+
+.landing-page-footer-unsortedList:after {
+	background-color: unset !important;
 }
