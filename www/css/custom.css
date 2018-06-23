@@ -1,7 +1,12 @@
 .signup-login-container {
+	margin-top: 3vh;
   display: flex;
   justify-content: space-around;
 }
+
+.signup-login-container a {
+text-decoration: underline;
+    color: black;}
 
 .login-page-signIn-button {
 	    width: 25%;
@@ -11,16 +16,73 @@
   margin-top: 75px;
 }
 
+.login-page-signUp-button {
+	width: 90vw;
+    margin: auto;
+    height: 8vh;
+}
+
+.login-page-forgotPasswordLink {
+			margin-bottom: 5vh;
+    text-decoration: underline;
+    color: black !important;
+    display: inline-block;
+    width: 100%;
+    min-width: 50%;
+    text-align: center;
+}
+
+.login-page-iconStack {
+	display: flex;
+	margin: auto 5%;
+}
+
+.login-page-iconStack li {
+	margin: 1%;
+}
+
+.login-page-iconStack li img {
+	width: 20vw;
+	
+}
+
+.landing-page-body {
+	background: #fff;
+}
+
 .landing-page-logo-container {
   text-align: center;
   margin-top: 175px;
-  margin-bottom: 75px;
-
+/*  margin-bottom: 75px;*/
+	margin-bottom: 3vh;
 }
 
 .landing-page-create-button {
-  width: 75%;
+/*  width: 75%;*/
   margin-left: auto;
   margin-right: auto;
-  height: 60px;
+/*  height: 60px;*/
+	border-radius: .3rem !important;
+	    width: 90%;
+    height: 10vh !important;
+    box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
+	font-size:16px;
+	
+}
+
+.landing-page-footer-unsortedList {
+	    text-align: center;
+    line-height: 4vh;
+    /* position: fixed; */
+    /* bottom: 10%; */
+    /* margin: 5%; */
+    margin-top: 50% !important;
+}
+
+.landing-page-footer-unsortedList:before {
+	background-color: unset !important;
+}
+
+.landing-page-footer-unsortedList:after {
+	background-color: unset !important;
 }
