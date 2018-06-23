@@ -140,7 +140,7 @@ var routes = [
   },
   {
     path: '/infinite-scroll/',
-    componentUrl: './pages/infinite-scroll.html',
+    componentUrl: './pages/IHInfiniteScroll.html',
   },
   {
     path: '/inputs/',

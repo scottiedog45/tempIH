@@ -66,6 +66,8 @@ text-decoration: underline;
 	    width: 90%;
     height: 10vh !important;
     box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
+	font-size:16px;
+	
 }
 
 .landing-page-footer-unsortedList {
