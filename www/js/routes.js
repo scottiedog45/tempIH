@@ -239,6 +239,10 @@ var routes = [
     componentUrl: './pages/IHSignUp.html',
   },
   {
+    path: '/signup/',
+    componentUrl: './pages/signup.html'
+  },
+  {
     path: '/smart-select/',
     url: './pages/smart-select.html',
   },
@@ -443,6 +447,10 @@ var routes = [
   {
     path: '/timeline-horizontal-calendar/',
     url: './pages/timeline-horizontal-calendar.html',
+  },
+  {
+    path: '/upgrade/',
+    url: './pages/upgrade.html'
   },
   {
     path: '/virtual-list/',

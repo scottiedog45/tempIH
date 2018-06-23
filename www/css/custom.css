@@ -31,7 +31,7 @@
 .signup-screen-sales-pitch-bold-p{
 	font-weight:bold;
 }
-												/*
+												
 												.signup-login-container {
 													margin-top: 3vh;
 														display: flex;
@@ -42,7 +42,7 @@
 												text-decoration: underline;
 																color: black;
 												}
-												*/
+												
 
 /*Signup Page Styles End*/
 
@@ -98,13 +98,17 @@
 	margin-bottom: 3vh;
 }
 
+.land-page-logo-container img {
+  width: 80%;
+}
+
 .landing-page-create-button {
 /*  width: 75%;*/
   margin-left: auto;
   margin-right: auto;
 /*  height: 60px;*/
 	border-radius: .3rem !important;
-	    width: 90%;
+	    width: 80%;
     height: 10vh !important;
     box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
 	font-size:16px;
@@ -128,9 +132,11 @@
 	background-color: unset !important;
 }
 
+<<<<<<< HEAD
 /*SUBSET OF SIGNUP STYLES ON LANDING PAGE!!!
 Signup Page Styles Start*/
 
+/*
 .signup-login-container {
 	margin-top: 3vh;
   display: flex;
@@ -141,10 +147,13 @@ Signup Page Styles Start*/
 text-decoration: underline;
     color: black;
 }
+*/
 
 /*Signup Page Styles End*/
 
 
+
+>>>>>>> e063632b3f152923563ee7382f2ce513b47e431e
 /*Landing Page Styles End*/
 
 /*Template Page Styles*/
