@@ -131,6 +131,7 @@
 				</div>
    </div>
     <form class="list form-store-data" id="new-invoice-form">
+				<div class='block'>
       <ul>
         <li class="item-content item-input">
           <div class="item-inner">
@@ -155,26 +156,31 @@
             </div>
           </div>
         </li>
-							
-								<li class="item-content item-input">
-          <div class="item-inner">
-            <div class="item-title item-label">Invoice #</div>
-            <div class="item-input-wrap">
-              <input name="invoice#" type="text" placeholder="">
-              <span class="input-clear-button"></span>
-            </div>
-          </div>
-        </li>
-							
-        <li class="item-content item-input">
-          <div class="item-inner">
-            <div class="item-title item-label">Invoice Date</div>
-            <div class="item-input-wrap">
-              <input name="invoiceDate" type="date" value="2014-04-30" placeholder="Please choose...">
-            </div>
-          </div>
-        </li>
-							
+								<div class='row'>
+									<div class='col'>
+										<li class="item-content item-input">
+												<div class="item-inner">
+														<div class="item-title item-label">Invoice #</div>
+														<div class="item-input-wrap">
+																<input name="invoice#" type="text" placeholder="">
+																<span class="input-clear-button"></span>
+														</div>
+												</div>
+										</li>
+										</div>
+									
+									
+									<div class='col'>
+										<li class="item-content item-input">
+												<div class="item-inner">
+														<div class="item-title item-label">Invoice Date</div>
+														<div class="item-input-wrap">
+																<input name="invoiceDate" type="date" value="2014-04-30" placeholder="Please choose...">
+														</div>
+												</div>
+										</li>
+							</div>
+							</div>
 							<!--Here I will put a h1 or p or something that says "Items", not part of the ul/li flow...but we'll see how it goes-->
 								<p class='newInvoice-page-items-pTag'>Items</p>
 								
@@ -209,6 +215,7 @@
           </div>
         </li>
       </ul>
+					</div>
     </form>
   </div>
 </div>
