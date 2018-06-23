@@ -22,7 +22,7 @@
               <div class="item-inner">
                 <div class="item-title item-label">Username/Email</div>
                 <div class="item-input-wrap">
-                  <input type="text" placeholder="Your username/email address" id="demo-username-2" class="input-with-value">
+                  <input type="text" placeholder="Your username/email address" id="login-email" class="input-with-value">
                   <span class="input-clear-button"></span>
                 </div>
               </div>
@@ -31,7 +31,7 @@
               <div class="item-inner">
                 <div class="item-title item-label">Password</div>
                 <div class="item-input-wrap">
-                  <input type="password" placeholder="Your password" id="demo-password-2" class="">
+                  <input type="password" placeholder="Your password" id="login-password" class="">
                 </div>
               </div>
             </li>
@@ -39,7 +39,7 @@
         </div>
         <div class="list">
           <ul>
-            <li><button  class='login-page-signIn-button col button button-fill'>Sign In</button></li>
+            <li><button  class='login-page-signIn-button col button button-fill' id='login-button'>Sign In</button></li>
 												<li>
 													<a class='login-page-forgotPasswordLink' href=''>forgot your password?</a>
 											</li>
@@ -62,18 +62,3 @@
   </div>
 	
 	</template>
-	<script>
-  return {
-    methods: {
-      signIn: function () {
-        var $ = this.$;
-        var app = this.$app;
-        var username = $('input#demo-username-1').val();
-        var password = $('input#demo-password-1').val();
-        app.dialog.alert('Username: ' + username + '<br>Password: ' + password, function () {
-          app.loginScreen.close();
-        })
-      }
-    }
-  }
-</script>

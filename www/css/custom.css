@@ -6,7 +6,8 @@
 
 .signup-login-container a {
 text-decoration: underline;
-    color: black;}
+    color: black;
+}
 
 .login-page-signIn-button {
 	    width: 25%;
@@ -57,13 +58,17 @@ text-decoration: underline;
 	margin-bottom: 3vh;
 }
 
+.land-page-logo-container img {
+  width: 80%;
+}
+
 .landing-page-create-button {
 /*  width: 75%;*/
   margin-left: auto;
   margin-right: auto;
 /*  height: 60px;*/
 	border-radius: .3rem !important;
-	    width: 90%;
+	    width: 80%;
     height: 10vh !important;
     box-shadow: 0.2rem 0.2rem rgba(0,0,0,0.3);
 	font-size:16px;
@@ -85,4 +90,9 @@ text-decoration: underline;
 
 .landing-page-footer-unsortedList:after {
 	background-color: unset !important;
+}
+
+.signup-page-signup-button {
+  width: 80%;
+  margin: auto;
 }
