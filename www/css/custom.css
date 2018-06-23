@@ -1,3 +1,18 @@
+/*NavBar Styles Start */
+.navBar-invoiceHome-logo{
+	width: 90%;
+    margin: auto 5%;
+}
+
+.navBar-logoCradle {
+	    /* width: 110%; */
+    padding: auto 18%;
+    box-shadow: 0.3vw 0.3vw rgba(0,0,0,0.3);
+    background: white;
+	border-radius: 1rem;
+}
+/*NavBar Styles End */
+
 /*Signup Page Styles Start*/
 
 .signup-login-container {
