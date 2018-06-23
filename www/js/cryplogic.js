@@ -17,7 +17,8 @@ $(document).ready(function() {
     let email = $('#sign-up-email').val();
     fetch('https://api.invoicehome.com/api/v1/guest/', {
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer '
       },
       method : 'POST',
       body: JSON.stringify({"user": {"email": `${email}`}})
@@ -40,13 +41,13 @@ $(document).ready(function() {
     fetch('https://api.invoicehome.com/api/v1/signin', {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'something' //fix this
+        'Authorization': 'Bearer: eyJhbGciOiJIUzI1NiJ9.eyJhbm9ueW1vdXNfaWQiOiI0OGRlY2VlZmY1MWZhMjQwYmRlZDg1Y2Q3ZGRjNzQxNSIsImlhdCI6MTUyOTc3NDc3MCwiZXhwIjoxNTI5Nzc4MzcwLCJpc3MiOiJUaGlzIGlzIGEgV2lraWxhbmUncyBJbnZvaWNlIEhvbWUgbW9iaWxlIGFwcGxpY2F0aW9uIHJ1bm5pbmcgYXQgaHR0cHM6Ly9pbnZvaWNlaG9tZS5jb20vIn0.eIZulU6fYxGmg1iSRMB28FbTv5mAO_7vMSvLSdjJ6dM'
       },
       method: 'POST',
       body: JSON.stringify(
         {'user': {
-          'email': email,
-          'password': password
+          'email': 'testforwikilane@gmail.com',
+          'password': 'Ironm@n45'
       }})
     })
     .then(response => {
@@ -54,6 +55,7 @@ $(document).ready(function() {
         return Promise.reject(response.statusText);
       } return response.json();
     })
+    .then(someData => someData.json())
     .then(data => console.log(data));
   })
 });
