@@ -126,6 +126,10 @@ var routes = [
     path: '/fab-morph/',
     url: './pages/fab-morph.html',
   },
+	{
+    path: '/forgotPassword/',
+    url: './pages/forgotPassword.html',
+  },
   {
     path: '/form-storage/',
     url: './pages/form-storage.html',
