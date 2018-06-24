@@ -24,6 +24,7 @@
     //need api permission on server side (for localhost?) to prevent cors errors
     //Restore and set as paid have the same endpoint?
     //change event to submit instead of on click for forms!!!
+    //And page=: page=<number> in request, probably not doing this for phones
 
 
 $(document).ready(function() {
@@ -567,7 +568,166 @@ $(document).ready(function() {
     null
   )
 
+  //tax 2
+  //doe sthis need to have body content as well? 
+  addEventHandlerTo(
+    null,
+    'items/' + itemid + '/tax_rates/2',
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'PATCH',
+    null,
+    null
+  )
 
+  //clear tax rates
+  addEventHandlerTo(
+    null,
+    'items/' + itemid + '/tax_rates/',
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'DELETE', 
+    null,
+    null
+  )
 
+  //CURRENCY ENDPOINTS
+  //get all currencies, returns all 
+  addEventHandlerTo(
+    null,
+    'currencies', 
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    'GET', 
+    null,
+    null
+  )
 
+  //currencey formats
+  addEventHandlerTo(
+    null,
+    'currencies/format?currency=' + currencyString + '&amount=' + amount + '&region=' + country,
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    'GET', 
+    null,
+    null
+  )
+
+  //COUNTRIES endpoints
+  //get country list
+  //OPTIONAL LOCAL PARAM locale, used for human format translations
+  addEventHandlerTo(
+    null,
+    'countries', 
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    'GET',
+    null,
+    null
+  )
+
+  //LOGO endpoints- figure out how to upload images from native ios library
+
+  //clipart endpoint
+  addEventHandlerTo(
+    null,
+    'logos/cliparts',
+    {
+      'Authorization': 'Bearer ' + token
+    }, 
+    'GET', 
+    null, 
+    null
+  )
+
+  //people endpoint
+  addEventHandlerTo(
+    null,
+    'logos/people',
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'GET',
+    null,
+    null
+  )
+
+  //jobs endpoint
+  addEventHandlerTo(
+    null,
+    'logos/jobs',
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'GET',
+    null,
+    null
+  )
+
+  //EMAIL endpoints
+  //index emails
+  addEventHandlerTo(
+    null,
+    'invoices/' + invoiceid + 'emails',
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'GET', 
+    null,
+    null
+  )
+
+  //new email
+  addEventHandlerTo(
+    null,
+    'invoices/' + invoiceid + '/emails/new',
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'GET', 
+    null,
+    null
+  )
+
+  //create email
+  addEventHandlerTo(
+    null,
+    'invoices/' + invoiceid + '/emails', 
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    }, 
+    'POST', 
+    null,
+    {
+      "email": {//example data
+        "from": "John Doe",
+        "to": "jiri.hradil@invoicehome.com",
+        "subject": "greetings",
+        "body": "Hi to Boston!",
+        "has_payment_link": true,
+        "send_me_copy": true
+      }
+    }
+  )
+
+  addEventHandlerTo(
+    null,
+    'emails/' + userid,
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'GET', 
+    null,
+    null
+  )
 });

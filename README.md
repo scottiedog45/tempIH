@@ -1,8 +1,8 @@
-# Framework7 V2 PhoneGap Kitchen Sink
+This is the first iteration of the ios invoice home app.
 
-Just a test of Framework7 V2 Kitchen Sink combined with PhoneGap.
+There is still a lot of junk to clean up from the framework build(stuff we don't need, like android/blackberry build stuff, and cordova-plugins to uninstall that we won't use). 
 
-----------------------
+Best way to experience this version:
 
 ### Install
 
