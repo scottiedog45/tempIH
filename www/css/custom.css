@@ -4,6 +4,10 @@
 	height: 5vh !important;
 }
 
+#navBarLinkedInImage {
+	height: 2vh !important;
+}
+
 .navBar-invoiceHome-logo{
 	width: 90%;
     margin: auto 5%;
