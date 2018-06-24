@@ -110,6 +110,10 @@ var routes = [
     path: '/content-block/',
     url: './pages/content-block.html',
   },
+		{
+				path: '/contact-us/',
+				url: './pages/contact-us.html',
+		},
   {
     path: '/data-table/',
     componentUrl: './pages/data-table.html',
@@ -127,8 +131,8 @@ var routes = [
     url: './pages/fab-morph.html',
   },
 	{
-    path: '/forgotPassword/',
-    url: './pages/forgotPassword.html',
+    path: '/forgot-password/',
+    url: './pages/forgot-password.html',
   },
   {
     path: '/form-storage/',
