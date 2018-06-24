@@ -78,6 +78,10 @@ var routes = [
     path: '/badge/',
     componentUrl: './pages/badge.html',
   },
+	{
+    path: '/blog/',
+    componentUrl: './pages/blog.html',
+  },
   {
     path: '/buttons/',
     url: './pages/buttons.html',
@@ -110,6 +114,10 @@ var routes = [
     path: '/content-block/',
     url: './pages/content-block.html',
   },
+		{
+				path: '/contact-us/',
+				url: './pages/contact-us.html',
+		},
   {
     path: '/data-table/',
     componentUrl: './pages/data-table.html',
@@ -122,13 +130,17 @@ var routes = [
     path: '/fab/',
     url: './pages/fab.html',
   },
+	{
+    path: '/faq/',
+    url: './pages/faq.html',
+  },
   {
     path: '/fab-morph/',
     url: './pages/fab-morph.html',
   },
 	{
-    path: '/forgotPassword/',
-    url: './pages/forgotPassword.html',
+    path: '/forgot-password/',
+    url: './pages/forgot-password.html',
   },
   {
     path: '/form-storage/',
@@ -456,6 +468,10 @@ var routes = [
     path: '/timeline-horizontal-calendar/',
     url: './pages/timeline-horizontal-calendar.html',
   },
+//		{
+//				path: '/twitter/',
+//				url: 'https://twitter.com/InvoiceHome',
+//		},
   {
     path: '/upgrade/',
     url: './pages/upgrade.html'
