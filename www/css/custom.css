@@ -1,4 +1,9 @@
 /*NavBar Styles Start */
+
+.navBar-item-media img{
+	height: 5vh !important;
+}
+
 .navBar-invoiceHome-logo{
 	width: 90%;
     margin: auto 5%;
