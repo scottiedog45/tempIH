@@ -46,8 +46,8 @@ $(document).ready(function() {
       method: 'POST',
       body: JSON.stringify(
         {'user': {
-          'email': 'testforwikilane@gmail.com',
-          'password': 'Ironm@n45'
+          'email': email,
+          'password': password
       }})
     })
     .then(response => {
