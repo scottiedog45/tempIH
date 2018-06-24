@@ -78,6 +78,10 @@ var routes = [
     path: '/badge/',
     componentUrl: './pages/badge.html',
   },
+	{
+    path: '/blog/',
+    componentUrl: './pages/blog.html',
+  },
   {
     path: '/buttons/',
     url: './pages/buttons.html',
@@ -125,6 +129,10 @@ var routes = [
   {
     path: '/fab/',
     url: './pages/fab.html',
+  },
+	{
+    path: '/faq/',
+    url: './pages/faq.html',
   },
   {
     path: '/fab-morph/',
