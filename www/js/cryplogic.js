@@ -23,6 +23,7 @@
     //Is this an endpoint? 
     //need api permission on server side (for localhost?) to prevent cors errors
     //Restore and set as paid have the same endpoint?
+    //change event to submit instead of on click for forms!!!
 
 
 $(document).ready(function() {
@@ -239,6 +240,7 @@ $(document).ready(function() {
   )
 
   //INVOICE endpoints
+  //Why are some of these "GUEST"? in the api? 
   //All Invoices
   addEventHandlerTo(
     null,
@@ -329,7 +331,8 @@ $(document).ready(function() {
     null,
     'invoices/' + //some number here....
     {
-      'Authorization': 'Bearer ' + token,
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
     },
     'PATCH',
     null,
@@ -403,9 +406,168 @@ $(document).ready(function() {
     null
   )
 
+  //copy invoice
   addEventHandlerTo(
-
+    null,
+    'invoices/' + id + '/copy', //put id here
+    {
+      'Authorization': 'Bearer ' + token,
+    },
+    'POST',
+    null,
+    null
   )
   
+  //CUSTOMER endpoints
+  //get all customers
+  addEventHandlerTo(
+    null,
+    'customers/',
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token,
+    },
+    'GET', //TODO is this right? Not referenced in API
+    null,
+    null
+  )
+
+  //paid customers
+  addEventHandlerTo(
+    null,
+    'customers/paid',
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token,
+    },
+    'GET',
+    null,
+    null
+  )
+
+  //unpaid customers (contains overdue invoices too)
+  addEventHandlerTo(
+    null,
+    'customers/unpaid', 
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    'GET',
+    null,
+    null
+  )
+
+  //overdue customers
+  addEventHandlerTo(
+    null,
+    'customers/overdue',
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    'GET',
+    null,
+    null
+  )
+
+  //show customer
+  addEventHandlerTo(
+    null,
+    'customers/' + id + '/',
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    'GET',
+    null,
+    null
+  )
+
+  //ITEMS endpoints
+  //index items
+  //page - optional for pagination
+  addEventHandlerTo(
+    null,
+    'invoices/' + id + '/items',
+    {
+      'Authorization': 'Bearer ' + token //Does this need the applicatoin/json header?
+    }, 
+    'GET', 
+    null,
+    null
+  )
+
+  addEventHandlerTo(
+    null,
+    'invoices/' + id + '/items',
+    {
+      'Content-Type': 'application / json',
+      'Authorization': 'Bearer ' + token
+    }, 
+    'POST',
+    null,
+    {
+      "item": { //these items are just place holders
+        "quantity": 1,
+        "description": "ford mustang",
+        "price": 30000,
+        "amount": 30000
+      }
+    }
+  )
+
+  //show item
+  addEventHandlerTo(
+    null,
+    'items/' + id,
+    {
+      'Authorization': 'Bearer ' + token
+    }, 
+    'GET', 
+    null,
+    null
+  )
+
+  //update item
+  addEventHandlerTo(
+    null,
+    'invoices/' + invoiceId + '/items' + itemid,
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    }, 
+    'PATCH', 
+    null,
+    null
+  )
+
+  //DELETE item 
+  addEventHandlerTo(
+    null,
+    'items/' + id,
+    {
+      'Authorization': 'Bearer ' + token
+    },
+    'DELETE', 
+    null,
+    null
+  )
+
+  //add tax rate
+  //what body data is needed for this tax? 
+  addEventHandlerTo(
+    null,
+    'items/' + itemid + '/tax_rates/1',
+    {
+      'Authorization': 'Bearer ' + token
+    }, 
+    'PATCH', 
+    null,
+    null
+  )
+
+
+
 
 });
