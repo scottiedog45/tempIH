@@ -239,6 +239,10 @@ var routes = [
     url: './pages/searchbar-expandable.html',
   },
   {
+    path: '/settings/',
+    componentUrl: 'pages/settings.html'
+  },
+  {
     path: '/sheet-modal/',
     componentUrl: './pages/sheet-modal.html',
   },
