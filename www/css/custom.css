@@ -1,4 +1,8 @@
 /*NavBar Styles Start */
+.navBar-external {
+/*	border:solid;*/
+		margin-left:2vw;
+}
 
 .navBar-item-media img{
 	height: 5vh !important;
