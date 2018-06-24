@@ -237,3 +237,43 @@ text-decoration: underline;
 }
 /*End of New Invoice Page Styles*/
 
+/*Start of Contact Us Page Styles*/
+.contact-us-page-content{
+	background: #fff;
+}
+
+.contact-us-page-h1 {
+	text-align: center;
+}
+
+.contact-us-page-faq {
+	margin: auto 4vw
+}
+
+
+
+.contact-us-page-bold-p {
+	font-weight: bold;
+	font-size: medium;
+}
+
+.contact-us-page-normal-p {
+	font-size: medium;
+}
+
+.contact-us-page-ask-bold-p {
+	font-weight: bold;
+	font-size: medium;
+	text-align: center;
+}
+
+.contact-us-page-form-unordered-list:after {
+	background-color: transparent !important;
+	
+}
+
+.contact-us-page-form-button:after {
+	background-color: transparent !important;
+}
+/*End of Contact Us Page Styles*/
+

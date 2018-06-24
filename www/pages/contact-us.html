@@ -1,16 +1,73 @@
-<div class='page' >
+<!--the 'Send message' button at the bottom of this file should hook into whatever logic is in place in the API to handle messages sent by the customer to Wikilane-->
+<div class='page'>
 		
 		
 				<div class="navbar">
-    <div class="navbar-inner sliding">
-      <div class="left">
-        <a href="#" class="link back">
-          <i class="icon icon-back"></i>
-          <span class="ios-only">Back</span>
-        </a>
-      </div>
-      <div class="title">Contact Us</div>
-    </div>
-  </div>
+						<div class="navbar-inner sliding">
+								<div class="left">
+										<a href="#" class="link back">
+												<i class="icon icon-back"></i>
+												<span class="ios-only">Back</span>
+										</a><!--link back-->
+								</div><!--left-->
+								<div class="title">Contact Us</div>
+						</div><!--navbar-inner sliding-->
+  		</div><!--navbar-->
+	
+				<div class='contact-us-page-content page-content'>
+						<h1 class='contact-us-page-h1'>Contact Us</h1>
+						<div class='contact-us-page-faq'>
+								
+								<p class='contact-us-page-bold-p'>How do I reset my password?</p>
+							
+				<!-- The href for 'please enter your email here' ought to go to the "forgot password" page which has been unresponsive to loading on my end for some reason, no matter how much tinkering with the route I do on the html file and the routes file-->
+								<p class='contact-us-page-normal-p'>OK, please just <a class='contact-us-page-a' href='#'>enter your email here</a>. (You may need to check your Spam folder for the Reset link.)</p>
+							<p class='contact-us-page-bold-p'>How do I change the invoice template?</p>
+								<p class='contact-us-page-normal-p'>To change the template of an invoice, please click on the saved invoice you wish to edit, then choose 'Select Template'.</p>
+								<p class='contact-us-page-bold-p'>How do I delete an invoice?</p>
+								<p class='contact-us-page-normal-p'>To delete an invoice please select the invoice you would like to delete, then click the yellow 'Delete' button.</p>		
+						</div><!--faq-->
+					
+						<div class='contact-us-page-ask'>
+								
+								<p class='contact-us-page-bold-p contact-us-page-ask-bold-p'>If you have any other questions, please do not hesitate to let us know!
+								</p><!--contact-us-page-bold-p contact-us-page-ask-bold-p-->
+							
+								<!--I am going to make a form for asking questions with
+								Framework 7's 'Form To Data' method of implementing forms.
+								We can use the Dom Event [form:todata] which will give us a way of sending what ever question the customer has to our database ~~to whatever endpoint Jiri has set up which handles the collection of questions for marketing or whomever to answer-->
+							
+								<form class='list' id='my-form'>
+											<ul class='contact-us-page-form-unordered-list'>
+													<li class='contact-us-page-form-list-item'>
+															<div class="item-content item-input">
+																	<div class="item-inner">
+																			<div class="item-title item-label">Your e-mail</div>
+																			<div class="item-input-wrap">
+																					<input type="email" name="email" placeholder="your@email.com">
+																			</div>
+																	</div>
+															</div>
+													</li>
+													<li class='contact-us-page-form-list-item'>
+															<div class="item-content item-input">
+																	<div class="item-inner">
+																			<div class="item-title item-label">Your question or message</div>
+																			<div class="item-input-wrap">
+																					<input type="text" name="question/message" placeholder="What can we do for you?">
+																			</div>
+																	</div>
+															</div>
+													</li>
+											</ul>
+								</form>
+								<div class="contact-us-page-form-button block block-strong row">
+										<div class="col"><a class="button button-fill convert-form-to-data" href="#">Send message</a></div>
+								</div>
+								
+						
+						</div><!--contact-us-page-ask-->
+	
+				</div><!--contact-us-page-content page-content-->
 	
 </div>
